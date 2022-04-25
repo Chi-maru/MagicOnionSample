@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Application.Server</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion.Abstractions" Version="4.4.1" />
+    <PackageReference Include="MessagePack.UnityShims" Version="2.3.85" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Compile Include="..\Application.Unity\Assets\Application\Scripts\Shared\**\*.cs" />
+  </ItemGroup>
+
+</Project>
