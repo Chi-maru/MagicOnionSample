@@ -1,0 +1,11 @@
+<SlnMergeSettings>
+    <MergeTargetSolution>..\Application.Server\Application.Server.sln</MergeTargetSolution>
+    <SolutionFolders>
+        <SolutionFolder FolderPath="AssemblyDefinitions" Guid="{2c63fad7-6be9-4a53-816a-9d1f6cad11d8}"/>
+    </SolutionFolders>
+    <NestedProjects>
+    	<NestedProject ProjectName="MessagePack*" FolderPath="AssemblyDefinitions" />
+        <NestedProject ProjectName="MagicOnion*" FolderPath="AssemblyDefinitions" />
+        <NestedProject ProjectName="Unity*" FolderPath="AssemblyDefinitions" />
+    </NestedProjects>
+</SlnMergeSettings>
