@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3ae1c1d9-31de-4568-a160-f75a1cb39e46": {
+      "ProjectGuid": "3ae1c1d9-31de-4568-a160-f75a1cb39e46",
+      "DisplayName": "Application.Server",
+      "ColorIndex": 0
+    },
+    "70e1c455-2887-4a20-8620-87ce9a0367ec": {
+      "ProjectGuid": "70e1c455-2887-4a20-8620-87ce9a0367ec",
+      "DisplayName": "Application.Shared",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
