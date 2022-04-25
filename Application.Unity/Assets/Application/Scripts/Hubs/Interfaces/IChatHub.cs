@@ -1,6 +1,7 @@
 using MagicOnion;
 using Application.Shared.Hubs;
 using System.Threading.Tasks;
+using Application.Shared.MessagePackObjects;
 
 namespace Application
 {
@@ -14,7 +15,7 @@ namespace Application
         /// </summary>
         /// <param name="userName">参加者の名前</param>
         /// <returns></returns>
-        Task JoinAsync(string userName);
+        Task JoinAsync(PlayerDataMpo playerData);
         /// <summary>
         /// 退室することをサーバに伝える
         /// </summary>

@@ -4,6 +4,7 @@ using MagicOnion.Client;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Application.Shared.MessagePackObjects;
 
 namespace Application
 {
@@ -90,7 +91,18 @@ namespace Application
             }
             else
             {
-                await this._chatHub.JoinAsync(this.UserNameTextInput.text);
+                var playerData = new PlayerDataMpo()
+                {
+                    Name = this.UserNameTextInput.text,
+                    Position = new Vector3(Random.Range(0, 100), Random.Range(0, 100), Random.Range(0, 100)),
+                    Rotation = Quaternion.Euler(Random.Range(0, 100), Random.Range(0, 100), Random.Range(0, 100)),
+                };
+
+                Debug.Log("===========NAME" + playerData.Name);
+                Debug.Log("===========Position" + playerData.Position);
+                Debug.Log("===========Rotation" + playerData.Rotation);
+
+                await this._chatHub.JoinAsync(playerData);
                 this._isJoin = true;
                 this.JoinOrLeaveButtonText.text = "退室する";
                 //メッセージ送信ボタンを表示
@@ -115,9 +127,9 @@ namespace Application
 
         #region Client <- Server
 
-        public void OnJoin(string name)
+        public void OnJoin(PlayerDataMpo playerData)
         {
-            this.ChatText.text += $"\n{name}さんが入室しました";
+            this.ChatText.text += $"{playerData.Name}さんが入室しました(Pos{playerData.Position}/{playerData.Rotation})";
         }
 
         public void OnLeave(string name)

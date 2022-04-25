@@ -17,6 +17,7 @@
     <Import Project="$(NuGetPackageRoot)grpc.tools\2.40.0\build\Grpc.Tools.props" Condition="Exists('$(NuGetPackageRoot)grpc.tools\2.40.0\build\Grpc.Tools.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMessagePackAnalyzer Condition=" '$(PkgMessagePackAnalyzer)' == '' ">C:\Users\CF0346\.nuget\packages\messagepackanalyzer\2.3.85</PkgMessagePackAnalyzer>
     <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\CF0346\.nuget\packages\grpc.tools\2.40.0</PkgGrpc_Tools>
   </PropertyGroup>
 </Project>

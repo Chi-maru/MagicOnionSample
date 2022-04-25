@@ -62,6 +62,8 @@
     <Compile Include="Assets\Application\Scripts\Shared\Hubs\IChatHubReceiver.cs" />
     <Compile Include="Assets\Application\Scripts\Shared\Hubs\IChatHub.cs" />
     <Compile Include="Assets\Application\Scripts\Hubs\ChatComponent.cs" />
+    <Compile Include="Assets\Application\Scripts\Shared\MessagePackObjects\PlayerDataMpo.cs" />
+    <Compile Include="Assets\Scripts\Generated\MessagePack.Generated.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

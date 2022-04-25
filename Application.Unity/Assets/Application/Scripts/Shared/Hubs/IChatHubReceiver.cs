@@ -1,3 +1,5 @@
+using Application.Shared.MessagePackObjects;
+
 namespace Application.Shared.Hubs
 {
     /// <summary>
@@ -9,7 +11,7 @@ namespace Application.Shared.Hubs
         /// 誰かがチャットに参加したことをクライアントに伝える。
         /// </summary>
         /// <param name="name">参加した人の名前</param>
-        void OnJoin(string name);
+        void OnJoin(PlayerDataMpo name);
         /// <summary>
         /// 誰かがチャットから退室したことをクライアントに伝える。
         /// </summary>

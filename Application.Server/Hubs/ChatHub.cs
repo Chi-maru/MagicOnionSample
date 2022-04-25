@@ -1,4 +1,5 @@
 ﻿using Application.Shared.Hubs;
+using Application.Shared.MessagePackObjects;
 using MagicOnion.Server.Hubs;
 
 namespace Application.Server.Hubs
@@ -8,16 +9,16 @@ namespace Application.Server.Hubs
         IGroup room;
         string me;
 
-        public async Task JoinAsync(string userName)
+        public async Task JoinAsync(PlayerDataMpo playerData)
         {
             //ルームは全員固定
             const string roomName = "SampleRoom";
             //ルームに参加&ルームを保持
             this.room = await this.Group.AddAsync(roomName);
             //自分の名前も保持
-            me = userName;
+            me = playerData.Name;
             //参加したことをルームに参加している全メンバーに通知
-            this.Broadcast(room).OnJoin(userName);
+            this.Broadcast(room).OnJoin(playerData);
         }
 
         public async Task LeaveAsync()

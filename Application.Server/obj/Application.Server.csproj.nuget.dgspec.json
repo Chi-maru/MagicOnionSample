@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CF0346\\MagicOnion\\Application.Server\\Application.Server.csproj": {}
+    "C:\\Users\\CF0346\\MagicOnionSample\\Application.Server\\Application.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CF0346\\MagicOnion\\Application.Server\\Application.Server.csproj": {
+    "C:\\Users\\CF0346\\MagicOnionSample\\Application.Server\\Application.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CF0346\\MagicOnion\\Application.Server\\Application.Server.csproj",
+        "projectUniqueName": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Server\\Application.Server.csproj",
         "projectName": "Application.Server",
-        "projectPath": "C:\\Users\\CF0346\\MagicOnion\\Application.Server\\Application.Server.csproj",
+        "projectPath": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Server\\Application.Server.csproj",
         "packagesPath": "C:\\Users\\CF0346\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CF0346\\MagicOnion\\Application.Server\\obj\\",
+        "outputPath": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\Application.Shared.csproj": {
-                "projectPath": "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\Application.Shared.csproj"
+              "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\Application.Shared.csproj": {
+                "projectPath": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\Application.Shared.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\Application.Shared.csproj": {
+    "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\Application.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\Application.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\Application.Shared.csproj",
         "projectName": "Application.Shared",
-        "projectPath": "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\Application.Shared.csproj",
+        "projectPath": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\Application.Shared.csproj",
         "packagesPath": "C:\\Users\\CF0346\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CF0346\\MagicOnion\\Application.Shared\\obj\\",
+        "outputPath": "C:\\Users\\CF0346\\MagicOnionSample\\Application.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -121,7 +121,19 @@
               "target": "Package",
               "version": "[4.4.1, )"
             },
+            "MessagePack.AspNetCoreMvcFormatter": {
+              "target": "Package",
+              "version": "[2.3.85, )"
+            },
+            "MessagePack.ReactiveProperty": {
+              "target": "Package",
+              "version": "[2.3.85, )"
+            },
             "MessagePack.UnityShims": {
+              "target": "Package",
+              "version": "[2.3.85, )"
+            },
+            "MessagePackAnalyzer": {
               "target": "Package",
               "version": "[2.3.85, )"
             }
