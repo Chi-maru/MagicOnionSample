@@ -1,12 +1,12 @@
 ﻿{
   "profiles": {
-    "ChatApp.Server (Production)": {
+    "Application.Server (Production)": {
       "commandName": "Project",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Production"
       }
     },
-    "ChatApp.Server (Development)": {
+    "Application.Server (Development)": {
       "commandName": "Project",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
