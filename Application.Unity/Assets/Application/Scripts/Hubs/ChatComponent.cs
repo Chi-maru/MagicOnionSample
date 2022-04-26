@@ -37,7 +37,7 @@ namespace Application
             this._isJoin = false;
 
             //Client側のHubの初期化
-            this._channel = new Channel("localhost:5013", ChannelCredentials.Insecure);
+            this._channel = new Channel("localhost:5000", ChannelCredentials.Insecure);
             this._chatHub = await StreamingHubClient.ConnectAsync<IChatHub, IChatHubReceiver>(this._channel, this);
 
             //メッセージ送信ボタンはデフォルト非表示

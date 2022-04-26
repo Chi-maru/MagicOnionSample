@@ -1,17 +1,35 @@
-using Application.Server;
+using System;
+using Grpc.Core;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Application.Server
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
 
-// Additional configuration is required to successfully run gRPC on macOS.
-// For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
-
-// Add services to the container.
-var startUp = new Startup();
-startUp.ConfigureServices(builder.Services);
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-startUp.Configure(app, app.Environment);
-
-app.Run();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder
+                        .UseKestrel(options =>
+                        {
+                            // WORKAROUND: Accept HTTP/2 only to allow insecure HTTP/2 connections during development.
+                            options.ConfigureEndpointDefaults(endpointOptions =>
+                            {
+                                endpointOptions.Protocols = HttpProtocols.Http2;
+                            });
+                        })
+                        .UseStartup<Startup>();
+                });
+    }
+}

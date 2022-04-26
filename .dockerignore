@@ -1,0 +1,4 @@
+Application.Unity/
+!Application.Unity/Assets/Scripts
+k8s/
+.vs/

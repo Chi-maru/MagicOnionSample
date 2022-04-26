@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePack", "MessagePack.csproj", "{952D5E27-32AA-C3CC-583E-99405B0E7EF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicOnion.Unity", "MagicOnion.Unity.csproj", "{19272607-A4CB-B76C-86ED-0500537FEBD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicOnion.Client", "MagicOnion.Client.csproj", "{56F2614F-E8EE-0224-FC40-09086504A1A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicOnion.Abstractions", "MagicOnion.Abstractions.csproj", "{C1263D45-9A3B-AFBE-C5B8-7A773EDCE019}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePack.Annotations", "MessagePack.Annotations.csproj", "{E1C58C68-1957-D2B3-C67F-0F9C92107DED}"
 EndProject
@@ -31,6 +31,10 @@ Global
 		{952D5E27-32AA-C3CC-583E-99405B0E7EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{952D5E27-32AA-C3CC-583E-99405B0E7EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{952D5E27-32AA-C3CC-583E-99405B0E7EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19272607-A4CB-B76C-86ED-0500537FEBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19272607-A4CB-B76C-86ED-0500537FEBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19272607-A4CB-B76C-86ED-0500537FEBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,10 +47,6 @@ Global
 		{C1263D45-9A3B-AFBE-C5B8-7A773EDCE019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1263D45-9A3B-AFBE-C5B8-7A773EDCE019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1263D45-9A3B-AFBE-C5B8-7A773EDCE019}.Release|Any CPU.Build.0 = Release|Any CPU
-		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{993E6C2D-5FA1-8FF6-1EE9-421AA42CD43D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1C58C68-1957-D2B3-C67F-0F9C92107DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1C58C68-1957-D2B3-C67F-0F9C92107DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C58C68-1957-D2B3-C67F-0F9C92107DED}.Release|Any CPU.ActiveCfg = Release|Any CPU

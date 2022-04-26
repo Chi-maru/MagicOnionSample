@@ -12,7 +12,7 @@ namespace Application
 
         void Awake()
         {
-            _channel = new Channel("localhost", 5013, ChannelCredentials.Insecure);
+            _channel = new Channel("localhost", 5000, ChannelCredentials.Insecure);
             _service = MagicOnionClient.Create<IApplicationService>(_channel);
         }
 
